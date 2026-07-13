@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="pageTitle">الدكتور</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2 id="clinicName">عيادة الشفاء</h2>
+
+    <nav>
+        <a href="index.html" id="homeLink">الرئيسية</a>
+        <a href="about.html" id="aboutLink">من نحن</a>
+        <a href="services.html" id="servicesLink">الخدمات</a>
+        <a href="doctor.html" id="doctorLink">الدكتور</a>
+        <a href="contact.html" id="contactLink">تواصل معنا</a>
+    </nav>
+
+    <div class="language">
+        <button onclick="changeLanguage('ar')">عربي</button>
+        <button onclick="changeLanguage('en')">English</button>
+        <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+    </div>
+
+</header>
+
+
+<section class="doctor-section">
+
+    <div class="doctor-container">
+
+        <img src="./images/doctor.jpg"
+             alt="Doctor Ehab Mahmoud"
+             class="doctor-image">
+
+
+        <div class="doctor-info">
+
+            <h2 id="doctorName">
+                د. إيهاب محمود
+            </h2>
+
+
+            <h3 id="doctorSpecialty">
+                استشاري طب وجراحة الأسنان
+            </h3>
+
+
+            <p id="doctorDescription">
+                يتمتع الدكتور إيهاب محمود بخبرة في مجال طب الأسنان،
+                ويحرص على تقديم أفضل رعاية للمرضى باستخدام أحدث
+                الأجهزة والتقنيات الحديثة، مع الاهتمام براحة المريض
+                وجودة العلاج.
+            </p>
+
+
+            <a href="booking.html" class="btn" id="bookingBtn">
+                احجز موعد
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
