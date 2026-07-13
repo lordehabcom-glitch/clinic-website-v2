@@ -1,0 +1,327 @@
+body{
+    background-color:#f5f9ff;
+    font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/* Header */
+
+header{
+    background:#0077b6;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+header h2{
+    margin:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd60a;
+}
+
+/* Hero */
+
+.hero{
+    background:
+        linear-gradient(rgba(0,119,182,.55), rgba(0,119,182,.55)),
+        url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:85vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:140px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:white;
+    margin-bottom:20px;
+    animation:fadeDown 1s ease;
+}
+
+.hero p{
+    font-size:22px;
+    color:white;
+    margin-bottom:30px;
+    animation:fadeUp 1.2s ease;
+}
+
+/* Button */
+
+.btn{
+    background:#0077b6;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#023e8a;
+    transform:scale(1.05);
+}
+
+/* Language Buttons */
+
+.language button{
+    background:white;
+    color:#0077b6;
+    border:none;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.language button:hover{
+    background:#caf0f8;
+}
+
+/* Services */
+
+.services-section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.services-section h2{
+    font-size:35px;
+    margin-bottom:40px;
+    color:#0077b6;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Booking */
+
+.booking-section{
+    padding:80px 10%;
+    text-align:center;
+    background:#f5f9ff;
+}
+
+.booking-section h2{
+    font-size:35px;
+    color:#0077b6;
+    margin-bottom:40px;
+}
+
+.booking-form{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.booking-form input{
+    width:90%;
+    padding:15px;
+    margin:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking-form button{
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking-form button:hover{
+    background:#023e8a;
+    transform:scale(1.05);
+}
+
+/* Dark Mode */
+
+.dark{
+    background:#1a1a1a;
+    color:white;
+}
+
+.dark header{
+    background:#222;
+}
+
+.dark .hero{
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+        url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.dark .hero h1,
+.dark .hero p{
+    color:white;
+}
+
+.dark .services-section{
+    background:#1a1a1a;
+}
+
+.dark .card{
+    background:#333;
+    color:white;
+}
+
+.dark .booking-section{
+    background:#1a1a1a;
+}
+
+.dark .booking-form{
+    background:#333;
+}
+
+.dark .booking-form input{
+    background:#444;
+    color:white;
+    border:none;
+}
+
+.dark .btn{
+    background:#0077ff;
+}
+
+/* Animations */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.5);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.doctor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.doctor-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.doctor-info {
+    max-width: 600px;
+    text-align: right;
+}
+
+.doctor-info p {
+    font-size: 18px;
+    line-height: 2;
+}
+/* Contact */
+
+.contact-section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contact-section h2{
+    font-size:35px;
+    color:#0077b6;
+    margin-bottom:30px;
+}
+
+.contact-section p{
+    font-size:20px;
+    line-height:2;
+}
+
+.contact-info{
+    background:white;
+    max-width:500px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.contact-info p{
+    margin:15px;
+}
