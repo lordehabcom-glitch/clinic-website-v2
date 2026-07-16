@@ -1164,3 +1164,37 @@ p{
     font-size:clamp(15px, 2vw, 18px);
     line-height:1.8;
 }
+
+@media (max-width: 700px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .clinic-title{
+        position: static;
+        transform: none;
+        font-size: 20px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .menu{
+        order: 2;
+    }
+
+    .language{
+        order: 3;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .language button{
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+}
