@@ -58,7 +58,7 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:50px;
+    font-size:32px;
     color:white;
     margin-bottom:20px;
     animation:fadeDown 1s ease;
@@ -1195,6 +1195,60 @@ p{
     .language button{
         font-size: 13px;
         padding: 7px 10px;
+    }
+
+}
+/* تصغير الهيدر وجعله مناسب لكل الشاشات */
+
+header{
+    padding:10px 15px;
+    min-height:70px;
+}
+
+.clinic-title{
+    font-size:22px;
+    max-width:45%;
+    text-align:center;
+    white-space:normal;
+}
+
+.menu-btn{
+    font-size:22px;
+    padding:6px 12px;
+}
+
+.language button{
+    font-size:13px;
+    padding:6px 10px;
+}
+
+
+/* للموبايل */
+
+@media(max-width:700px){
+
+    header{
+        gap:10px;
+    }
+
+    .clinic-title{
+        font-size:18px;
+        max-width:100%;
+        order:1;
+    }
+
+    .menu{
+        order:2;
+    }
+
+    .language{
+        order:3;
+        gap:5px;
+    }
+
+    .language button{
+        font-size:12px;
+        padding:5px 8px;
     }
 
 }
