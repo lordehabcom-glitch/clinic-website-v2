@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حجز موعد</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
 
-    <h2>عيادة الدكتور ايهاب </h2>
+    <h2 id="clinicName" class="clinic-title">
+    عيادات الدكتور إيهاب محمود إبراهيم
+</h2>
 
     <nav>
         <a href="index.html">الرئيسية</a>
@@ -27,14 +29,51 @@
 
     <form class="booking-form">
 
-        <input type="text" id="name" placeholder="الاسم بالكامل" required>
+        <label>الاسم <span style="color:red">*</span></label>
+<input type="text" id="name" placeholder="الاسم بالكامل" required>
 
-        <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+<label>الهاتف <span style="color:red">*</span></label>
+<input type="tel" id="phone" placeholder="+20**********" required>
 
-        <input type="number" id="age" placeholder="السن" required>
+<label>السن</label>
+<input type="number" id="age" placeholder="السن">
 
-        <input type="date" id="date" required>
+<label>التاريخ <span style="color:red">*</span></label>
+<input type="date" id="date" required>
+<label>الخدمة</label>
+<select id="service">
+    <option value="">اختر الخدمة</option>
+    <option>الكشف والتشخيص</option>
+    <option>تبييض الأسنان</option>
+    <option>الحشوات التجميلية</option>
+    <option>علاج الجذور وحشو العصب</option>
+    <option>تقويم الأسنان</option>
+    <option>تركيبات وتيجان الأسنان</option>
+    <option>تجميل وتصميم الابتسامة</option>
+    <option>الفينير</option>
+    <option>علاج اللثة وتنظيف الجير</option>
+    <option>زراعة الأسنان</option>
+    <option>خلع الأسنان وضروس العقل</option>
+    <option>جراحة الوجه والفكين</option>
+    <option value="other">خدمة أخرى</option>
+</select>
+<div id="otherServiceBox" style="display:none; margin-top:15px;">
+    <label>اكتب اسم الخدمة</label>
+    <input type="text" id="otherService" placeholder="اكتب الخدمة المطلوبة">
+</div>
+<label>الفرع <span style="color:red">*</span></label>
 
+<select id="branch" required>
+    <option value="">اختر الفرع</option>
+    <option>فرع كفر سعد</option>
+    <option>فرع دمياط الجديدة</option>
+</select>
+
+
+<label>وصف الحالة (اختياري)</label>
+
+<textarea id="caseDescription" placeholder="اكتب وصف الحالة"></textarea>
+<br><br>
         <button type="button" onclick="sendWhatsApp()">
             تأكيد الحجز
         </button>
@@ -42,8 +81,78 @@
     </form>
 
 </section>
+<a href="index.html" class="back-btn">
+    ⬅ العودة إلى الرئيسية
+</a>
+</section>
 
-<script src="script.js"></script>
+<footer class="footer">
 
+    <h3>🦷 عيادات الدكتور إيهاب محمود إبراهيم</h3>
+
+    <div class="footer-branches">
+
+        <div class="footer-branch">
+
+           <h4>
+    <a href="kafr-saad.html">
+        📍 فرع كفر سعد
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01010171499">
+                    01010171499
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201010171499" target="_blank">
+                    واتساب كفر سعد
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-branch">
+
+            <h4>
+    <a href="new-damietta.html">
+        📍 فرع دمياط الجديدة
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01101080403">
+                    01101080403
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201101080403" target="_blank">
+                    واتساب دمياط الجديدة
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        © 2026 جميع الحقوق محفوظة | عيادات الدكتور إيهاب محمود إبراهيم
+    </p>
+
+</footer>
+<script src="js/script.js"></script>
+<button id="scrollTopBtn" onclick="scrollToTop()">
+⬆
+</button>
 </body>
 </html>

@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title id="pageTitle">الدكتور</title>
+    <title id="pageTitle">الطبيب</title>
 
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
 
-    <h2 id="clinicName">عيادة الشفاء</h2>
+    <h2 id="clinicName" class="clinic-title">
+    عيادات الدكتور إيهاب محمود إبراهيم
+</h2>
 
-    <nav>
+    <div class="menu">
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <div class="menu-content" id="menuContent">
+
         <a href="index.html" id="homeLink">الرئيسية</a>
         <a href="about.html" id="aboutLink">من نحن</a>
         <a href="services.html" id="servicesLink">الخدمات</a>
-        <a href="doctor.html" id="doctorLink">الدكتور</a>
+        <a href="doctor.html" id="doctorLink">الطبيب</a>
         <a href="contact.html" id="contactLink">تواصل معنا</a>
-    </nav>
+        <a href="booking.html">احجز موعد</a>
 
+    </div>
+
+</div>
     <div class="language">
         <button onclick="changeLanguage('ar')">عربي</button>
         <button onclick="changeLanguage('en')">English</button>
@@ -45,7 +55,7 @@
         <div class="doctor-info">
 
             <h2 id="doctorName">
-                د. إيهاب محمود
+                د. إيهاب محمود ابراهيم
             </h2>
 
 
@@ -55,7 +65,7 @@
 
 
             <p id="doctorDescription">
-                يتمتع الدكتور إيهاب محمود بخبرة في مجال طب الأسنان،
+                يتمتع الدكتور إيهاب محمود ابراهيم بخبرة في مجال طب الأسنان،
                 ويحرص على تقديم أفضل رعاية للمرضى باستخدام أحدث
                 الأجهزة والتقنيات الحديثة، مع الاهتمام براحة المريض
                 وجودة العلاج.
@@ -71,9 +81,78 @@
     </div>
 
 </section>
+<a href="index.html" class="back-btn">
+    ⬅ العودة إلى الرئيسية
+</a>
+</section>
+
+<footer class="footer">
+
+    <h3>🦷 عيادات الدكتور إيهاب محمود إبراهيم</h3>
+
+    <div class="footer-branches">
+
+        <div class="footer-branch">
+
+            <h4>
+    <a href="kafr-saad.html">
+        📍 فرع كفر سعد
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01010171499">
+                    01010171499
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201010171499" target="_blank">
+                    واتساب كفر سعد
+                </a>
+            </p>
+
+        </div>
 
 
-<script src="script.js"></script>
+        <div class="footer-branch">
 
+            <h4>
+    <a href="new-damietta.html">
+        📍 فرع دمياط الجديدة
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01101080403">
+                    01101080403
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201101080403" target="_blank">
+                    واتساب دمياط الجديدة
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        © 2026 جميع الحقوق محفوظة | عيادات الدكتور إيهاب محمود إبراهيم
+    </p>
+
+</footer>
+<script src="js/script.js"></script>
+<button id="scrollTopBtn" onclick="scrollToTop()">
+⬆
+</button>
 </body>
 </html>

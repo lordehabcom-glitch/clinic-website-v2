@@ -6,93 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="pageTitle">الخدمات</title>
 
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+
 <header>
 
-    <h2 id="clinicName">عيادة الشفاء</h2>
+    <!-- القائمة المنسدلة -->
+    <div class="menu">
 
-    <nav>
-        <a href="index.html" id="homeLink">الرئيسية</a>
-        <a href="about.html" id="aboutLink">من نحن</a>
-        <a href="services.html" id="servicesLink">الخدمات</a>
-        <a href="doctor.html" id="doctorLink">الدكتور</a>
-        <a href="contact.html" id="contactLink">تواصل معنا</a>
-    </nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
+        <div class="menu-content" id="menuContent">
+
+            <a href="index.html" id="homeLink">الرئيسية</a>
+            <a href="about.html" id="aboutLink">من نحن</a>
+            <a href="services.html" id="servicesLink">الخدمات</a>
+            <a href="doctor.html" id="doctorLink">الطبيب</a>
+            <a href="contact.html" id="contactLink">تواصل معنا</a>
+            <a href="booking.html">احجز موعد</a>
+
+        </div>
+
+    </div>
+
+    <!-- اسم العيادة -->
+    <h2 id="clinicName" class="clinic-title">
+        عيادات الدكتور إيهاب محمود إبراهيم
+    </h2>
+
+    <!-- اللغة والوضع الليلي -->
     <div class="language">
+
         <button onclick="changeLanguage('ar')">عربي</button>
+
         <button onclick="changeLanguage('en')">English</button>
+
         <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+
     </div>
 
 </header>
-
-
 <section class="services-section">
 
     <h2 id="servicesTitle">خدماتنا</h2>
 
-    <div class="cards">
+   <div class="cards">
+
+<div class="card">
+<h3 id="service1">🦷 الكشف والتشخيص ووضع خطة العلاج</h3>
+<p id="serviceDesc1">
+تبدأ رحلة العلاج بفحص شامل للأسنان واللثة، والاستعانة بالأشعات اللازمة عند الحاجة،
+للوصول إلى تشخيص دقيق ووضع خطة علاج متكاملة تناسب احتياجات كل حالة.
+</p>
+</div>
 
 
-        <div class="card">
-            <h3 id="service1">🦷 تنظيف الأسنان</h3>
-            <p id="serviceDesc1">
-                تنظيف احترافي وإزالة الجير للحفاظ على صحة الأسنان.
-            </p>
-        </div>
+<div class="card">
+<h3 id="service2">✨ تبييض الأسنان</h3>
+<p id="serviceDesc2">
+إجراء تجميلي يهدف إلى تفتيح لون الأسنان وتقليل التصبغات الناتجة عن العادات اليومية والعوامل المختلفة.
+</p>
+</div>
 
 
-        <div class="card">
-            <h3 id="service2">😁 تبييض الأسنان</h3>
-            <p id="serviceDesc2">
-                ابتسامة ناصعة باستخدام أحدث تقنيات التبييض.
-            </p>
-        </div>
+<div class="card">
+<h3 id="service3">🤍 الحشوات التجميلية</h3>
+<p id="serviceDesc3">
+حشوات بلون الأسنان تستخدم لعلاج التسوس وإصلاح بعض العيوب البسيطة.
+</p>
+</div>
 
 
-        <div class="card">
-            <h3 id="service3">🦷 حشو الأسنان</h3>
-            <p id="serviceDesc3">
-                علاج التسوس باستخدام أفضل خامات الحشو.
-            </p>
-        </div>
+<div class="card">
+<h3 id="service4">🦷 علاج الجذور وحشو العصب</h3>
+<p id="serviceDesc4">
+علاج الالتهاب أو العدوى التي تصل إلى عصب السن للحفاظ على السن الطبيعي.
+</p>
+</div>
 
 
-        <div class="card">
-            <h3 id="service4">✨ تقويم الأسنان</h3>
-            <p id="serviceDesc4">
-                تقويم ثابت ومتحرك للحصول على ابتسامة مثالية.
-            </p>
-        </div>
+<div class="card">
+<h3 id="service5">😁 تقويم الأسنان</h3>
+<p id="serviceDesc5">
+تصحيح اعوجاج وتزاحم الأسنان وتحسين انتظامها.
+</p>
+</div>
 
 
-        <div class="card">
-            <h3 id="service5">🦷 زراعة الأسنان</h3>
-            <p id="serviceDesc5">
-                تعويض الأسنان المفقودة بأحدث تقنيات الزراعة.
-            </p>
-        </div>
+<div class="card">
+<h3 id="service6">👑 تركيبات وتيجان الأسنان</h3>
+<p id="serviceDesc6">
+تعويض أو حماية الأسنان المتضررة واستعادة شكلها ووظيفتها.
+</p>
+</div>
 
 
-        <div class="card">
-            <h3 id="service6">👶 أسنان الأطفال</h3>
-            <p id="serviceDesc6">
-                رعاية متكاملة لأسنان الأطفال في بيئة مريحة.
-            </p>
-        </div>
+<div class="card">
+<h3 id="service7">😁 تجميل وتصميم الابتسامة</h3>
+<p id="serviceDesc7">
+خطة تجميلية متكاملة لتحسين شكل الابتسامة.
+</p>
+</div>
+
+
+<div class="card">
+<h3 id="service8">🪞 قشور الأسنان التجميلية – الفينير</h3>
+<p id="serviceDesc8">
+قشور تجميلية رقيقة لتحسين لون وشكل الأسنان الأمامية.
+</p>
+</div>
+
+
+<div class="card">
+<h3 id="service9">🦷 علاج اللثة وتنظيف الجير</h3>
+<p id="serviceDesc9">
+إزالة الجير وعلاج التهابات اللثة.
+</p>
+</div>
+
+
+<div class="card">
+<h3 id="service10">🔩 زراعة الأسنان</h3>
+<p id="serviceDesc10">
+تعويض الأسنان المفقودة بأحدث تقنيات زراعة الأسنان.
+</p>
+</div>
+
+
+<div class="card">
+<h3 id="service11">🦷 خلع الأسنان وضروس العقل</h3>
+<p id="serviceDesc11">
+خلع الأسنان غير القابلة للعلاج وضروس العقل عند الحاجة الطبية.
+</p>
+</div>
+
+
+<div class="card">
+<h3 id="service12">👶 طب أسنان الأطفال</h3>
+<p id="serviceDesc12">
+رعاية متخصصة لأسنان الأطفال في بيئة آمنة ومريحة.
+</p>
+</div>
+
+</div>
+
+
+
+</div>
 
 
     </div>
 
 </section>
+<a href="index.html" class="back-btn">
+    ⬅ العودة إلى الرئيسية
+</a>
+</section>
+
+<footer class="footer">
+
+    <h3>🦷 عيادات الدكتور إيهاب محمود إبراهيم</h3>
+
+    <div class="footer-branches">
+
+        <div class="footer-branch">
+
+            <h4>
+    <a href="kafr-saad.html">
+        📍 فرع كفر سعد
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01010171499">
+                    01010171499
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201010171499" target="_blank">
+                    واتساب كفر سعد
+                </a>
+            </p>
+
+        </div>
 
 
-<script src="script.js"></script>
+        <div class="footer-branch">
 
+            <h4>
+    <a href="new-damietta.html">
+        📍 فرع دمياط الجديدة
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01101080403">
+                    01101080403
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201101080403" target="_blank">
+                    واتساب دمياط الجديدة
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        © 2026 جميع الحقوق محفوظة | عيادات الدكتور إيهاب محمود إبراهيم
+    </p>
+
+</footer>
+<script src="js/script.js"></script>
+<button id="scrollTopBtn" onclick="scrollToTop()">
+⬆
+</button>
 </body>
 </html>

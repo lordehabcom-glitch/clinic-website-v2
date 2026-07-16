@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>تواصل معنا</title>
-
-   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -19,25 +19,27 @@
 <header>
 
 
-    <h2 id="clinicName">
-        عيادة الشفاء
-    </h2>
+   <h2 id="clinicName" class="clinic-title">
+    عيادات الدكتور إيهاب محمود إبراهيم
+</h2>
 
 
+    <div class="menu">
 
-    <nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <div class="menu-content" id="menuContent">
 
         <a href="index.html" id="homeLink">الرئيسية</a>
-
         <a href="about.html" id="aboutLink">من نحن</a>
-
         <a href="services.html" id="servicesLink">الخدمات</a>
-
-        <a href="doctor.html" id="doctorLink">الدكتور</a>
-
+        <a href="doctor.html" id="doctorLink">الطبيب</a>
         <a href="contact.html" id="contactLink">تواصل معنا</a>
+        <a href="booking.html">احجز موعد</a>
 
-    </nav>
+    </div>
+
+</div>
 
 
 
@@ -71,8 +73,40 @@
     <h2 id="contactTitle">
         تواصل معنا
     </h2>
+<h3 class="social-title">
+    روابط التواصل الاجتماعي
+</h3>
+<div class="social-icons">
 
+    <a href="https://www.facebook.com/share/1DNBjy5pjT/" target="_blank" title="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
 
+    <a href="mailto:Lord.ehab.com@gmail.com" title="الإيميل">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+    <div class="whatsapp-menu">
+
+    <a href="#" onclick="toggleWhatsapp(event)" title="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="whatsapp-options" id="whatsappOptions">
+
+        <a href="https://wa.me/201010171499" target="_blank">
+            واتساب كفر سعد
+        </a>
+
+        <a href="https://wa.me/201101080403" target="_blank">
+            واتساب دمياط الجديدة
+        </a>
+
+    </div>
+
+</div>
+
+</div>
 
     <p id="contactDescription">
         يمكنك التواصل مع عيادة الكتور ايهاب محمود للحجز والاستفسار.
@@ -80,31 +114,97 @@
 
 
 
+<div class="contact-cards">
+   <div class="contact-info" id="kafr-saad">
 
-    <div class="contact-info">
+    <h3>📍 فرع كفر سعد</h3>
 
+    <p>
+        📍 العنوان: كفر سعد - تفتيش كفر سعد - شارع الجيش - عمارة 4 (أعلى المهندس للدواجن)
+    </p>
 
-        <p id="address">
-            📍 العنوان: دمياط
-        </p>
+    <p>
+     مواعيد العمل:السبت - الاثنين - الأربعاء
+        <br>
+       🕒 من 4:00 مساءً إلى 9:00 مساءً
+    </p>
+   
+    <p>
+        📞
+        <a href="tel:01010171499" class="phone-link">
+            01010171499
+        </a>
+    </p>
 
+    <p>
+    📧 البريد الإلكتروني:
+    <a href="mailto:Lord.ehab.com@gmail.com">
+        Lord.ehab.com@gmail.com
+    </a>
+</p>
 
+    <div class="branch-icons">
 
-        <p id="phone">
-            📞 الهاتف: 01000000000
-        </p>
+    <a href="mailto:Lord.ehab.com@gmail.com" title="البريد الإلكتروني">
+        <i class="fas fa-envelope"></i>
+    </a>
+<a href="https://wa.me/201010171499" target="_blank" title=" واتساب كفر سعد">
+    <i class="fab fa-whatsapp"></i>
+</a>
+   
 
-
-
-        <p id="email">
-            📧 البريد الإلكتروني: info@clinic.com
-        </p>
-
-
-
+    <a href="https://www.facebook.com/share/17uikZDeAR/" target="_blank" title="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
     </div>
+</div>
 
 
+
+<div class="contact-info" id="new-damietta">
+
+    <h3>📍 فرع دمياط الجديدة</h3>
+
+    <p>
+        📍 العنوان:  دمياط - دمياط الجديدة - المنطقة المركزية - بجوار قصر الثقافة - أعلى محل Girls للملابس (الدور الثالث)
+    </p>
+
+    <p>
+       مواعيد العمل:الأحد - الثلاثاء - الخميس
+        <br>
+       🕒 من 4:00 مساءً إلى 10:00 مساءً
+    </p>
+
+    <p>
+        📞
+        <a href="tel:01101080403" class="phone-link">
+            01101080403
+        </a>
+    </p>
+
+    <p>
+    📧 البريد الإلكتروني:
+    <a href="mailto:Lord.ehab.com@gmail.com">
+        Lord.ehab.com@gmail.com
+    </a>
+</p>
+<div class="branch-icons">
+
+    <a href="mailto:Lord.ehab.com@gmail.com" title="البريد الإلكتروني">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="https://wa.me/201101080403" target="_blank" title="واتساب دمياط الجديدة">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/1DNBjy5pjT/" target="_blank" title="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+</div>
+</div>
+
+</div>
 
 
     <a href="booking.html" class="btn" id="bookingBtn">
@@ -118,11 +218,81 @@
 </section>
 
 
+<a href="index.html" class="back-btn">
+    ⬅ العودة إلى الرئيسية
+</a>
 
 
-<script src="script.js"></script>
+<footer class="footer">
+
+    <h3>🦷 عيادات الدكتور إيهاب محمود إبراهيم</h3>
+
+    <div class="footer-branches">
+
+        <div class="footer-branch">
+
+            <h4>
+    <a href="kafr-saad.html">
+        📍 فرع كفر سعد
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01010171499">
+                    01010171499
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201010171499" target="_blank">
+                    واتساب كفر سعد
+                </a>
+            </p>
+
+        </div>
 
 
+        <div class="footer-branch">
+
+            <h4>
+    <a href="new-damietta.html">
+        📍 فرع دمياط الجديدة
+    </a>
+</h4>
+
+            <p>
+                📞 
+                <a href="tel:01101080403">
+                    01101080403
+                </a>
+            </p>
+
+            <p>
+                💬 
+                <a href="https://wa.me/201101080403" target="_blank">
+                    واتساب دمياط الجديدة
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        © 2026 جميع الحقوق محفوظة | عيادات الدكتور إيهاب محمود إبراهيم
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<button id="scrollTopBtn" onclick="scrollToTop()">
+⬆
+</button>
 </body>
 
 </html>
