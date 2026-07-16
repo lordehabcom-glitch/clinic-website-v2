@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lordehabcom-glitch.github.io/clinic-website-v2/sitemap.xml
