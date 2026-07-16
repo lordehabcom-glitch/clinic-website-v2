@@ -44,7 +44,28 @@ description: "ابتسامتكم مسؤوليتنا... وسلامتكم أولو
             aboutTitle: "من نحن",
             aboutDescription:
             "مرحبًا بكم في عيادة الدكتور ايهاب محمود ، نقدم خدمات طب الأسنان بأحدث الأجهزة والتقنيات الحديثة، ونحرص دائمًا على توفير أفضل رعاية صحية لجميع المرضى في بيئة آمنة ومريحة، لأن ابتسامتكم هي هدفنا الأول.",
+visionTitle: "رؤيتنا",
 
+visionText:
+"أن نكون من العيادات الرائدة في تقديم خدمات طب الأسنان المتكاملة، من خلال الجمع بين الخبرة الطبية، والتقنيات الحديثة، وتطبيق أعلى معايير الجودة وسلامة المرضى؛ للوصول إلى ابتسامة صحية وعلاج آمن لكل مريض.",
+
+
+missionTitle: "رسالتنا",
+
+missionText:
+"نلتزم في عيادة الدكتور إيهاب محمود إبراهيم لطب الأسنان بتقديم رعاية متكاملة ومتميزة في مختلف تخصصات طب الأسنان، قائمة على التشخيص الدقيق، ووضع خطة علاج مناسبة لكل حالة، واستخدام التقنيات والمواد الحديثة، مع الاهتمام الكامل براحة المريض وسلامته وتحقيق أفضل النتائج العلاجية والتجميلية الممكنة.",
+
+
+aboutClinicTitle: "نبذة عن العيادة",
+
+aboutClinicText:
+`عيادة الدكتور إيهاب محمود إبراهيم لطب الأسنان هي عيادة متخصصة في تقديم خدمات طب الأسنان المتكاملة للأطفال والكبار، وفق أسس علمية ومعايير مهنية تهدف إلى توفير تجربة علاجية آمنة ومريحة.
+
+نؤمن بأن كل مريض له احتياجات مختلفة؛ لذلك تبدأ رحلتنا بالتشخيص الدقيق والاستماع إلى المريض، ثم وضع خطة علاج متكاملة تناسب حالته واحتياجاته.
+
+تقدم العيادة خدمات علاج وتجميل الأسنان، والحشوات التجميلية، وعلاج الجذور، والتركيبات، وتبييض الأسنان، وعلاج أسنان الأطفال، وغيرها من خدمات طب الأسنان، مع الالتزام بمعايير الجودة وسلامة المرضى في جميع مراحل تقديم الخدمة.
+
+ابتسامتك… مسؤوليتنا، وسلامتك أولويتنا.`,
 
 doctorName: "د. إيهاب محمود ابراهيم",
             doctorSpecialty: "استشاري طب وجراحة الأسنان",
@@ -132,7 +153,28 @@ description: "Your Smile Is Our Responsibility... Your Safety Is Our Priority",
             aboutDescription:
 "Welcome to Dr. Ehab Mahmoud Ibrahim Clinics. We provide high-quality dental care using the latest equipment and modern technologies in a safe and comfortable environment because your smile is our priority.",
 
+visionTitle: "Our Vision",
 
+visionText:
+"To be one of the leading dental clinics providing integrated dental services by combining medical expertise, modern technologies, and the highest standards of quality and patient safety to achieve a healthy smile and safe treatment for every patient.",
+
+
+missionTitle: "Our Mission",
+
+missionText:
+"At Dr. Ehab Mahmoud Ibrahim Dental Clinic, we are committed to providing comprehensive and distinguished dental care in different specialties, based on accurate diagnosis, personalized treatment plans, modern technologies and materials, while ensuring patient comfort, safety, and the best possible therapeutic and cosmetic results.",
+
+
+aboutClinicTitle: "About The Clinic",
+
+aboutClinicText:
+`Dr. Ehab Mahmoud Ibrahim Dental Clinic is a specialized dental clinic providing comprehensive dental services for children and adults according to scientific principles and professional standards to ensure a safe and comfortable treatment experience.
+
+We believe that every patient has different needs. Therefore, our journey begins with accurate diagnosis and listening carefully to the patient, followed by creating a comprehensive treatment plan that suits each case and its requirements.
+
+The clinic provides dental treatment and cosmetic services, including cosmetic fillings, root canal treatment, dental crowns, teeth whitening, pediatric dentistry, and other dental services, while maintaining quality standards and patient safety throughout all stages of care.
+
+Your Smile... Our Responsibility, Your Safety Is Our Priority.`,
 
 doctorName: "Dr. Ehab Mahmoud Ibrahim",
             doctorSpecialty: "Consultant of Dentistry and Oral Surgery",
